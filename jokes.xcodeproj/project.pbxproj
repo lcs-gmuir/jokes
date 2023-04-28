@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		984A69A029F8994C001123A3 /* jokesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A699F29F8994C001123A3 /* jokesApp.swift */; };
-		984A69A229F8994C001123A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A69A129F8994C001123A3 /* ContentView.swift */; };
 		984A69A429F89964001123A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984A69A329F89964001123A3 /* Assets.xcassets */; };
 		984A69A729F89964001123A3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 984A69A629F89964001123A3 /* Preview Assets.xcassets */; };
+		984A69B229FBA9EF001123A3 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A69B129FBA9EF001123A3 /* Joke.swift */; };
+		984A69B429FBAA56001123A3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A69B329FBAA56001123A3 /* NetworkService.swift */; };
+		984A69B629FBAA7F001123A3 /* JokeView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 984A69B529FBAA7F001123A3 /* JokeView .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		984A699C29F8994C001123A3 /* jokes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jokes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		984A699F29F8994C001123A3 /* jokesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jokesApp.swift; sourceTree = "<group>"; };
-		984A69A129F8994C001123A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		984A69A329F89964001123A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		984A69A629F89964001123A3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		984A69B129FBA9EF001123A3 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		984A69B329FBAA56001123A3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		984A69B529FBAA7F001123A3 /* JokeView .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JokeView .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				984A699F29F8994C001123A3 /* jokesApp.swift */,
-				984A69A129F8994C001123A3 /* ContentView.swift */,
+				984A69AD29FBA95D001123A3 /* Model  */,
+				984A69AE29FBA96E001123A3 /* Services */,
+				984A69AF29FBA986001123A3 /* Views */,
 				984A69A329F89964001123A3 /* Assets.xcassets */,
 				984A69A529F89964001123A3 /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				984A69A629F89964001123A3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		984A69AD29FBA95D001123A3 /* Model  */ = {
+			isa = PBXGroup;
+			children = (
+				984A69B129FBA9EF001123A3 /* Joke.swift */,
+			);
+			path = "Model ";
+			sourceTree = "<group>";
+		};
+		984A69AE29FBA96E001123A3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				984A69B329FBAA56001123A3 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		984A69AF29FBA986001123A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				984A69B529FBAA7F001123A3 /* JokeView .swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				984A69A229F8994C001123A3 /* ContentView.swift in Sources */,
+				984A69B229FBA9EF001123A3 /* Joke.swift in Sources */,
+				984A69B429FBAA56001123A3 /* NetworkService.swift in Sources */,
+				984A69B629FBAA7F001123A3 /* JokeView .swift in Sources */,
 				984A69A029F8994C001123A3 /* jokesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

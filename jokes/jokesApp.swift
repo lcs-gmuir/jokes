@@ -2,7 +2,7 @@
 //  jokesApp.swift
 //  jokes
 //
-//  Created by Samantha Stewart on 2023-04-25.
+//  Created by Samantha Stewart on 2023-04-14.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct jokesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            JokeView()
         }
     }
 }
